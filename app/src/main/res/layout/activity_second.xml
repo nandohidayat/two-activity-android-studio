@@ -27,4 +27,24 @@
         android:layout_marginLeft="@dimen/activity_margin"
         android:layout_marginStart="@dimen/activity_margin"
         android:textAppearance="?android:textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/button_second"
+        android:layout_toStartOf="@+id/button_second"
+        android:hint="@string/editText_second"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="returnReply"
+        android:text="@string/button_second" />
 </RelativeLayout>
