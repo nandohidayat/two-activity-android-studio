@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:paddingBottom="@dimen/activity_margin"
     android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
     android:paddingTop="@dimen/activity_margin"
-    android:paddingRight="@dimen/activity_margin" >
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button_main"
@@ -19,4 +19,13 @@
         android:layout_alignParentRight="true"
         android:onClick="launchSecondActivity"
         android:text="@string/button_main" />
+
+    <EditText
+        android:id="@+id/editText_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/button_main"
+        android:layout_toStartOf="@+id/button_main"
+        android:hint="@string/editText_main" />
 </RelativeLayout>
