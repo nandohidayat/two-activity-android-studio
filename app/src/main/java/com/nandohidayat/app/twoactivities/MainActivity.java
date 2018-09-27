@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         mMessageEditText = (EditText) findViewById(R.id.editText_main);
         mReplyHeadTextView = (TextView) findViewById(R.id.text_header_reply);
         mReplyTextView = (TextView) findViewById(R.id.text_message_reply);
-        mMessageEditText.setText("");
     }
 
     public void launchSecondActivity(View view) {
@@ -31,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         String message = mMessageEditText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivityForResult(intent, TEXT_REQUEST);
+        mMessageEditText.setText("");
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
